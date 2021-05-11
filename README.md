@@ -1,4 +1,4 @@
-# Webservice en Node
+# Webserver en Node
 
 Esta es una aplicación que nos permite:
  * Servir contenido por el protocolo http
