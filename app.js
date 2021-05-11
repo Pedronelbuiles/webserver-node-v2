@@ -16,20 +16,20 @@ hbs.registerPartials(__dirname + '/views/partials')
 // Servir contenido estático | middleware 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
-  res.render('home', data)
-})
+// app.get('/', (req, res) => {
+//   res.render('home', data)
+// })
 
-app.get('/generic', (req, res) => {
-  res.render('generic', data)
-})
+// app.get('/generic', (req, res) => {
+//   res.render('generic', data)
+// })
 
-app.get('/elements', (req, res) => {
-  res.render('elements', data)
-})
+// app.get('/elements', (req, res) => {
+//   res.render('elements', data)
+// })
 
 app.get('*', (req, res) => {
-  res.sendFile(__dirname + '/public/404.html')  
+  res.sendFile(__dirname + '/public/index.html')  
 })
 
 app.listen(port , () => {
